@@ -62,7 +62,7 @@ fun FormIsian(
             )
             HorizontalDivider(modifier = Modifier
                 .padding(20.dp)
-                .width(250.dp), thickness = Thickness,color = Color.Red)
+                .width(250.dp), thickness = 1.dp,color = Color.Red)
             Row{
                 jenisK.forEach {
                     item->
@@ -78,7 +78,7 @@ fun FormIsian(
 
             HorizontalDivider(modifier = Modifier
                 .padding(20.dp)
-                .width(250.dp)
+                .width(250.dp),
                 thickness = 1.dp,
                 color = Color.Red
             )
@@ -94,7 +94,7 @@ fun FormIsian(
             Button(
                 modifier = Modifier.fillMaxWidth(1f)
                     .padding(all = 25.dp),
-                onClick = onSubmitBtnClick
+                onClick = OnSubmitBtnClick
             ) {
                 Text(stringResource(id = R.string.submit))
             }

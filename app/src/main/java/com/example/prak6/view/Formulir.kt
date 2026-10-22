@@ -5,4 +5,7 @@ import androidx.compose.runtime.Composable
 
 @Optin(ExperimentalMaterial3Api::class)
 @Composable
-fun FormIsian()
+fun FormIsian(
+    jenisK: List<String> = listOf("Laki-laki", "Perempuan"),
+    OnSubmitBtnClick : () -> unit
+){}
